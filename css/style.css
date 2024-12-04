@@ -1,0 +1,46 @@
+body{
+    background-color: antiquewhite;
+}
+
+#container{
+    display:grid;
+    height:100vh; 
+    gap:10px;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 20% 60% 1fr;
+    grid-template-areas:
+    "hs nv"
+    "sc sc"
+    "sc sc"
+    "ft ft"
+
+}
+
+#house{
+    grid-area: hs;
+    background-color: blue;
+}
+
+nav{
+    grid-area: nv;
+    background-color: chocolate;
+    display:flex;
+    order: initial;
+}
+
+section{
+    grid-area: sc;
+    background-color: crimson;
+}
+
+#bigtitle{
+    font-size:7rem;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+footer{
+    grid-area: ft;
+    background-color: darkblue;
+}
