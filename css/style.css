@@ -17,17 +17,13 @@ body{
 
 }
 
-#house{
+header{
     grid-area: hs;
     background-color: #c0392b;
-    background-image: url(../img/house-icon-sm.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 10px;
 
-}
 
+}
 
 nav{
     grid-area: nv;
@@ -55,9 +51,21 @@ nav{
     padding: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+
 }
 
 footer{
     grid-area: ft;
     background-color: #c0392b;
+}
+
+#browse{
+    display: grid;
+    height:100vh; 
+    gap:5px;
+    grid-template-columns:  25% 25% 25% 1fr;
+    grid-template-rows:  10% 25% 25% 25% 1fr;
+    grid-template-areas:
+    
+
 }
